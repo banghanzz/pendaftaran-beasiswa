@@ -5,7 +5,6 @@ Project akhir untuk sertifikasi Junior Web Developer BNSP. Dikarenakan waktu yan
 - HTML
 - JS
 - Bootstrap
-- XAMPP
 - Local Storage
 
 ## Instalasi
