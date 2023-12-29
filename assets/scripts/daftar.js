@@ -1,10 +1,10 @@
 const allInputs = document.querySelectorAll('.input');
-const emailInput = document.querySelector('.email-input');
-const semesterInput = document.querySelector('.semester-input');
-const ipkInput = document.querySelector('.ipk-input');
-const pilihanInput = document.querySelector('.pilihan-input');
-const uploadInput = document.querySelector('.upload-input');
-const daftarBtn = document.querySelector('.daftar-btn');
+const emailInput = document.querySelector('#email');
+const semesterInput = document.querySelector('#semester');
+const ipkInput = document.querySelector('#ipk');
+const pilihanInput = document.querySelector('#pilihanBeasiswa');
+const uploadInput = document.querySelector('#uploadFile');
+const daftarButton = document.querySelector('#daftarButton');
 const form = document.querySelector('form');
 
 const dataMahasiswa = [];
@@ -43,11 +43,11 @@ semesterInput.addEventListener('change', () => {
         if (ipkInput.value < 3) {
             pilihanInput.disabled = true;
             uploadInput.disabled = true;
-            daftarBtn.disabled = true;
+            daftarButton.disabled = true;
         } else {
             pilihanInput.disabled = false;
             uploadInput.disabled = false;
-            daftarBtn.disabled = false;
+            daftarButton.disabled = false;
         }
     }
 });

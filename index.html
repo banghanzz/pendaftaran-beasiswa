@@ -49,7 +49,7 @@
                                         <label class="form-label fw-semibold">Masukan Nama</label>
                                     </th>
                                     <th class="">
-                                        <input type="text" class="form-control nama-input input" />
+                                        <input type="text" class="form-control input" id="nama" />
                                     </th>
                                 </tr>
                                 <tr>
@@ -57,7 +57,7 @@
                                         <label class="form-label fw-semibold">Masukan Email</label>
                                     </th>
                                     <th class="">
-                                        <input type="email" class="form-control email-input input" />
+                                        <input type="email" class="form-control input" id="email" />
                                     </th>
                                 </tr>
                                 <tr>
@@ -65,7 +65,7 @@
                                         <label class="form-label fw-semibold">Nomor HP</label>
                                     </th>
                                     <th class="">
-                                        <input type="number" class="form-control nomor-input input" />
+                                        <input type="number" class="form-control input" id="nomorHP" />
                                     </th>
                                 </tr>
                                 <tr>
@@ -73,7 +73,7 @@
                                         <label class="form-label fw-semibold">Semester saat ini</label>
                                     </th>
                                     <th class="">
-                                        <select class="form-select semester-input input"
+                                        <select class="form-select input" id="semester"
                                             aria-label="Default select example">
                                             <option selected>-Pilih Semester-</option>
                                             <option value="1">1</option>
@@ -92,7 +92,7 @@
                                         <label class="form-label fw-semibold">IPK terakhir</label>
                                     </th>
                                     <th class="">
-                                        <input type="text" class="form-control ipk-input input" readonly />
+                                        <input type="text" class="form-control input" id="ipk" readonly />
                                     </th>
                                 </tr>
                                 <tr>
@@ -100,14 +100,14 @@
                                         <label class="form-label fw-semibold">Pilihan Beasiswa</label>
                                     </th>
                                     <th class="">
-                                        <select class="form-select pilihan-input input"
+                                        <select class="form-select input" id="pilihanBeasiswa"
                                             aria-label="Default select example" disabled>
                                             <option selected>-Pilihan Beasiswa-</option>
-                                            <option value="Beasiswa akademik">
-                                                Beasiswa akademik
+                                            <option value="Beasiswa Akademik">
+                                                Beasiswa Akademik
                                             </option>
-                                            <option value="Beasiswa non akademik">
-                                                Beasiswa non akademik
+                                            <option value="Beasiswa non Akademik">
+                                                Beasiswa non Akademik
                                             </option>
                                         </select>
                                     </th>
@@ -117,16 +117,17 @@
                                         <label class="form-label fw-semibold">Upload Berkas Syarat</label>
                                     </th>
                                     <th class="">
-                                        <input type="file" class="upload-input" disabled name="uploaded_file" />
+                                        <input type="file" class="" id="uploadFile" disabled
+                                            name="uploaded_file" />
                                     </th>
                                 </tr>
                             </tbody>
                         </table>
                         <div class="d-flex">
-                            <button type="submit" class="btn daftar-btn action_button_primary me-3" disabled>
+                            <button type="submit" class="btn action_button_primary me-3" id="daftarButton" disabled>
                                 Daftar
                             </button>
-                            <button class="btn form-btn action_button_secondary_danger">
+                            <button class="btn action_button_secondary_danger">
                                 Batal
                             </button>
                         </div>

@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 <td>${data[0][4]}</td>
                 <td>${data[0][5]}</td>
                 <td><a href="data:application/octet-stream;base64,${base64Content}" download="${data[0][6]}">${data[0][6]}</a></td>
-                <td>belum di verifikasi</td>
+                <td>Belum diverifikasi</td>
             </tr>
             `;
         }
