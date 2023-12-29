@@ -5,10 +5,10 @@ Project akhir untuk sertifikasi Junior Web Developer BNSP. Dikarenakan waktu yan
 - HTML
 - JS
 - Bootstrap
-- XAMPP
 - Local Storage
 
 ## Instalasi
 1. **Clone Repository**
+   ```
    git clone https://github.com/banghanzz/pendaftaran-beasiswa
-2. **Jalankan index.html di browser**
+3. **Jalankan index.html di browser**
