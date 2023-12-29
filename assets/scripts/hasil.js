@@ -1,16 +1,16 @@
 const dataContainer = document.querySelector('.data-container');
 
-// event yang bekerja saat DOMContentLoaded
+// Event yang bekerja saat DOMContentLoaded
 window.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('dataMahasiswa')) {
         const data = JSON.parse(localStorage.getItem('dataMahasiswa'));
         const base64Content = localStorage.getItem(data[0][6]);
 
-        let html = '';
+        let showDataMahasiswa = '';
 
         // melakukan perulangan pada data
         for (let i = 0; i < data.length; i++) {
-            html += `
+            showDataMahasiswa += `
             <tr>
                 <th scope="row">${i + 1}</th>
                 <td>${data[0][0]}</td>
@@ -25,6 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
             `;
         }
 
-        dataContainer.innerHTML = html;
+        dataContainer.innerHTML = showDataMahasiswa;
     }
 });
